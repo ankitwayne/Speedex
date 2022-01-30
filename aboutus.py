@@ -1,6 +1,9 @@
+#!C:\Python27\python.exe
+print "Content-Type:text/html\n\n"
+print """
 <html>
   <head>
-  
+ 
   <link href="css/style.css" rel="stylesheet"/>
   <script src="js/slider.js"></script>
   </head>
@@ -22,7 +25,7 @@
 	  <ul>
  <li><a href="index.py">HOME</a></li>
  <li><a href="aboutus.py">ABOUTUS</a></li>
- <li><a href="contactus.py">CONTACT US</a></li>
+ <li><a href="contactus.py">CONTACTUS</a></li>
  <li><a href="complain.py">COMPLAIN</a></li>
  <li><a href="tracking.py">TRACKING</a></li>
  <li><a href="register.py">REGISTER</a></li>
@@ -36,16 +39,18 @@
 		</div>
 	  <!--- slider div end--->
 	  <!--- main div start--->
-	  <div id="main" style="background-image:url("images/4.jpeg");">
-	  <h1 style="text-align:center">Home</h1>
+	  <div id="main">
+	  <h1 style="text-align:center">About Us</h1>
       <hr/>
-	  <p style="text-align:center;font-family:Ariel;font-size:28px;">Specialities</p><br/>
-	  
-       <p style="text-align:center;font-size:20px;font-family:Comic Sans MS"> I. International Express: SPEEDEX is accepted by customers for its international<br/> standard quality services for documents and parcels. With its immense understanding and reputation,<br/><br/>
-       II. Domestic Express:Premium Express service by Air:<br/>Your time sensitive Documents / Non-documents are delivered next day in all Major airport Cities on priority basis.Deferred Service by Surface and place.<br/><br/>
-
-        III.  Air Freight Service:We offer reliable and efficient air freight forwarding service throughout the world.<br/>With an excellent network of operations, we promise a timely and cost effective transportation of goods to the desired destinations. SPEEDEX clears smoothly through customs, and forwards to its final destinations.<br/>
-		</p>
+      <p style="text-align:center;font-size:28px;font-family:Ariel;">Welcome To Bolt Packers And Movers</p>
+<p style="text-align:center;font-size:20px;font-family:Comic Sans MS;margin-top:100px;">We hereby introduce ourselves as one of the most leading & professional <br/> expert express distribution company engaged into the
+business of International Courier & Cargo segment<br/>, since decade, based in Mumbai
+YOUR SEARCH ENDS! IF YOU HAVE BEEN LOOKING FOR A RELIABLE & DEDICATED SERVICES PROVIDER.<br/> PLEASE HOLD YOUR DECISION
+TILL YOU MATCH OUR BENCHMARK SERVICES AND OFFER THEN DECIDE ON MERIT<br/>
+It has been our privilege to provide you with world class Cargo & Courier services that suits your needs.<br/> We provide services of branded premium
+world class Cargo & Couriers like DHL, TNT, UPS, FedEx, Aramex,<br/> Blue Dart, AFL, First Flight & all other non- branded couriers
+which are almost equally goods & cost elective.<br/> Bolt has the pleasure of presenting you with our rates for all your outgoing
+International & Domestic courier & Cargo shipments.</p>
 	  </div>
 	  <!--- main div end--->
 	  <!--- footer div start--->
@@ -58,3 +63,8 @@
    </div>
   </body>
 </html>
+
+
+
+
+"""

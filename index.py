@@ -1,3 +1,6 @@
+#!C:\Python27\python.exe
+print "Content-Type:text/html\n\n"
+print """
 <html>
   <head>
   
@@ -22,10 +25,11 @@
 	  <ul>
  <li><a href="index.py">HOME</a></li>
  <li><a href="aboutus.py">ABOUTUS</a></li>
+
  <li><a href="contactus.py">CONTACT US</a></li>
  <li><a href="complain.py">COMPLAIN</a></li>
  <li><a href="tracking.py">TRACKING</a></li>
- <li><a href="register.py">REGISTER</a></li>
+<li><a href="register.py">REGISTER</a></li>
  <li><a href="login.py">LOGIN</a></li>
  </ul>
 	  </div>
@@ -50,7 +54,7 @@
 	  <!--- main div end--->
 	  <!--- footer div start--->
 	  <div id="footer">
-	    <div id="lfooter"><h3>Copyright &copy Speedex Courier</h3></div>
+	    <div id="lfooter"><h3>&copy 2020 Bolt Pvt. Ltd.</h3></div>
 		<div id="rfooter"><h3>Designed and Developed by Ankit Mishra</h3></div>
 	  </div>
 	  <!--- footer div end--->
@@ -58,3 +62,8 @@
    </div>
   </body>
 </html>
+
+
+
+
+"""

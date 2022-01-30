@@ -1,3 +1,6 @@
+#!C:\Python27\python.exe
+print "Content-Type:text/html\n\n"
+print """
 <html>
   <head>
   
@@ -22,7 +25,7 @@
 	  <ul>
  <li><a href="index.py">HOME</a></li>
  <li><a href="aboutus.py">ABOUTUS</a></li>
- <li><a href="contactus.py">CONTACT US</a></li>
+ <li><a href="contactus.py">CONTACTUS</a></li>
  <li><a href="complain.py">COMPLAIN</a></li>
  <li><a href="tracking.py">TRACKING</a></li>
  <li><a href="register.py">REGISTER</a></li>
@@ -36,21 +39,39 @@
 		</div>
 	  <!--- slider div end--->
 	  <!--- main div start--->
-	  <div id="main" style="background-image:url("images/4.jpeg");">
-	  <h1 style="text-align:center">Home</h1>
-      <hr/>
-	  <p style="text-align:center;font-family:Ariel;font-size:28px;">Specialities</p><br/>
-	  
-       <p style="text-align:center;font-size:20px;font-family:Comic Sans MS"> I. International Express: SPEEDEX is accepted by customers for its international<br/> standard quality services for documents and parcels. With its immense understanding and reputation,<br/><br/>
-       II. Domestic Express:Premium Express service by Air:<br/>Your time sensitive Documents / Non-documents are delivered next day in all Major airport Cities on priority basis.Deferred Service by Surface and place.<br/><br/>
+	  <div id="main">
+	  <h1 style="text-align:center">Tracking</h1>
+	  <hr>
+	  <table style="margin:0px auto;width:80%;" border="1">
+	  <tr>
+	  <th>Reference No.</th>
+	  <th>Source Location</th>
+	  <th>Current Location</th>
+	  <th>Destination Location</th>
+	  <th>Status</th>
+	  </tr>
+"""
+import MySQLdb
+con=MySQLdb.connect('127.0.0.1','root','','speedex',3306)
+cur=con.cursor()
+q="select * from consignment"
+cur.execute(q)
+res=cur.fetchall()
+for r in res:
+ print "<tr>"
+ print "<td>",r[0],"</td>"
+ print "<td>",r[7],"</td>"
+ print "<td>",r[8],"</td>"
+ print "<td>",r[9],"</td>"
+ print "<td>",r[10],"</td>"
+ print "</tr>"
 
-        III.  Air Freight Service:We offer reliable and efficient air freight forwarding service throughout the world.<br/>With an excellent network of operations, we promise a timely and cost effective transportation of goods to the desired destinations. SPEEDEX clears smoothly through customs, and forwards to its final destinations.<br/>
-		</p>
+print """</table>
 	  </div>
 	  <!--- main div end--->
 	  <!--- footer div start--->
 	  <div id="footer">
-	    <div id="lfooter"><h3>Copyright &copy Speedex Courier</h3></div>
+	    <div id="lfooter"><h3>&copy 2020 Bolt Pvt. Ltd.</h3></div>
 		<div id="rfooter"><h3>Designed and Developed by Ankit Mishra</h3></div>
 	  </div>
 	  <!--- footer div end--->
@@ -58,3 +79,8 @@
    </div>
   </body>
 </html>
+
+
+
+
+"""

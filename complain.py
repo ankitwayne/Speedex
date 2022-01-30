@@ -1,3 +1,6 @@
+#!C:\Python27\python.exe
+print "Content-Type:text/html\n\n"
+print """
 <html>
   <head>
   
@@ -22,7 +25,7 @@
 	  <ul>
  <li><a href="index.py">HOME</a></li>
  <li><a href="aboutus.py">ABOUTUS</a></li>
- <li><a href="contactus.py">CONTACT US</a></li>
+ <li><a href="contactus.py">CONTACTUS</a></li>
  <li><a href="complain.py">COMPLAIN</a></li>
  <li><a href="tracking.py">TRACKING</a></li>
  <li><a href="register.py">REGISTER</a></li>
@@ -36,21 +39,44 @@
 		</div>
 	  <!--- slider div end--->
 	  <!--- main div start--->
-	  <div id="main" style="background-image:url("images/4.jpeg");">
-	  <h1 style="text-align:center">Home</h1>
-      <hr/>
-	  <p style="text-align:center;font-family:Ariel;font-size:28px;">Specialities</p><br/>
-	  
-       <p style="text-align:center;font-size:20px;font-family:Comic Sans MS"> I. International Express: SPEEDEX is accepted by customers for its international<br/> standard quality services for documents and parcels. With its immense understanding and reputation,<br/><br/>
-       II. Domestic Express:Premium Express service by Air:<br/>Your time sensitive Documents / Non-documents are delivered next day in all Major airport Cities on priority basis.Deferred Service by Surface and place.<br/><br/>
-
-        III.  Air Freight Service:We offer reliable and efficient air freight forwarding service throughout the world.<br/>With an excellent network of operations, we promise a timely and cost effective transportation of goods to the desired destinations. SPEEDEX clears smoothly through customs, and forwards to its final destinations.<br/>
-		</p>
+	  <div id="main">
+	  <h1 style="text-align:center">Complain Form</h1>
+	  <hr/>
+	  <form action="complaincode.py" method="post" style="text-align:center;">
+	  <img src="images/download.jfif" />
+	   <table style="margin:0px auto;width:40%;height:350px;text-align:center;>
+	   <tr>
+	   <td>Enter Name</td>
+	   <td><input type="text" name="name" required /></td>
+	   </tr>
+	   <tr>
+	   <td>Enter Mobile No.</td>
+	   <td><input type="number" name="mobileno" required /></td>
+	   </tr>
+	   <tr>
+	   <td>Enter Email Id</td>
+	   <td><input type="email" name="email" required /></td>
+	   </tr>
+	   <tr>
+	   <td>Reference No.:</td>
+	   <td><input type="number" name="refno" required /></td>
+	   </tr>
+	   <tr>
+	   <td>Enter Your Complain :</td>
+	   <td><textarea name="ctext" required /></textarea></td>
+	   </tr>
+	   <tr>
+	   <td colspan="2" align="center">
+	   <input type="submit" value="SUBMIT"/>
+	   </td>
+	   </tr>
+	   </table>
+	  </form>
 	  </div>
 	  <!--- main div end--->
 	  <!--- footer div start--->
 	  <div id="footer">
-	    <div id="lfooter"><h3>Copyright &copy Speedex Courier</h3></div>
+	    <div id="lfooter"><h3>&copy 2015 Speedex Logestics All Rights Reserved</h3></div>
 		<div id="rfooter"><h3>Designed and Developed by Ankit Mishra</h3></div>
 	  </div>
 	  <!--- footer div end--->
@@ -58,3 +84,8 @@
    </div>
   </body>
 </html>
+
+
+
+
+"""
